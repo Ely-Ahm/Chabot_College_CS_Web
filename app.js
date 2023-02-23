@@ -1,5 +1,4 @@
 // SearchForm Section code
-// This is a test to be deleted later (Ignore)
 let searchForm = document.querySelector('.search-form');
 document.querySelector('#search-btn').onclick = () =>{
     searchForm.classList.toggle('active');
