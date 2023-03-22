@@ -379,10 +379,13 @@ html{
 }
 .owl-carousel .item img{
     display: block;
-    width: 700px;
+    width: 100%;   /*700px*/
     height: 300px;
-    border: 2px solid #95A2BB;
-    object-fit: cover;
+    object-fit: fill;
+}
+.owl-carousel .item:hover{
+    border: solid 1.5px yellow;    
+    transition: all 0.3s ease-in-out;
 }
 .owl-dots{
     text-align: center;
@@ -550,7 +553,7 @@ html{
 }
 #FAQ .wrapper .FAQ-info a:hover{
     background: none;
-    color: #95A2BB;
+    color: #afaeae;
 }
 #FAQ .wrapper .FAQ-card{
     display: flex;
@@ -569,7 +572,7 @@ html{
     transition: all 0.5s ease;
 }
 #FAQ .wrapper .card:hover{
-    transform: scale(1.05);
+    transform: scale(1.05); /*1.05s*/
 }
 #FAQ .wrapper .card .card-header img{
     width: 100%;
@@ -668,7 +671,7 @@ html{
 /* Footer Section Styling  */
 .footer-bottom{
     background: #1A1B1E;
-    color: #536DAF;
+    color: rgb(255, 255, 255);
 }
 .footer-bottom p{
     font-size: 14px;
